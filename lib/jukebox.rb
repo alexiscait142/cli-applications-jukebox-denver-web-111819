@@ -64,6 +64,6 @@ def run(songs)
         help 
         puts prompt
     end
+    exit_jukebox
   end
-  exit_jukebox
 end
