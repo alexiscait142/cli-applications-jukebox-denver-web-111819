@@ -19,11 +19,6 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
-def initial_command
-  puts "Please enter a command:"
-  gets.strip
-end
-
 def help
   puts "I accept the following commands:"
   puts "- help : displays this help message"
@@ -55,9 +50,20 @@ def exit_jukebox
 end
 
 def run(songs)
-  
+  prompt = "Please enter a command:"
+  puts prompt
+  input = gets.strip
     while input != "exit"
-    if input == "list"
-      list(songs)
+      if input == "list"
+        list(songs)
+        puts prompt
+      elsif input == "play"
+        play(songs)
+        puts prompt
+      elsif input == "help"
+        help 
+        puts prompt
+    end
   end
+  exit_jukebox
 end
