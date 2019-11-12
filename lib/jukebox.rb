@@ -40,5 +40,7 @@ def play(songs)
     puts "Playing #{songs[input.to_i - 1]}"
     elsif songs.include?(input) != nil 
     puts "Playing #{input}"
+  else
+    puts "Invalid input, please try again"
   end
 end
