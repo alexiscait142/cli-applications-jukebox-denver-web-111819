@@ -47,13 +47,10 @@ def run(songs)
   while input != "exit"
       if input == "list"
         list(songs)
-        puts prompt
       elsif input == "play"
         play(songs)
-        puts prompt
       elsif input == "help"
         help 
-        puts prompt
     end
   end
   exit_jukebox
