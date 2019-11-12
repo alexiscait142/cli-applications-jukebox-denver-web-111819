@@ -38,6 +38,7 @@ def play(songs)
   input = gets.strip
   if (1...9).to_a.include?(input.to_i) != nil 
     puts "Playing #{songs[input.to_i - 1]}"
-    elsif songs.include?(input.to_i)
+    elsif songs.include?(input) != nil 
+    puts "Playing #{songs[input"
   end
 end
