@@ -54,16 +54,16 @@ def run(songs)
   puts prompt
   input = gets.strip
     while input != "exit"
-      if input == "list"
-        list(songs)
-        puts prompt
-      elsif input == "play"
-        play(songs)
-        puts prompt
-      elsif input == "help"
-        help 
-        puts prompt
-    end
+    #   if input == "list"
+    #     list(songs)
+    #     puts prompt
+    #   elsif input == "play"
+    #     play(songs)
+    #     puts prompt
+    #   elsif input == "help"
+    #     help 
+    #     puts prompt
+    # end
     exit_jukebox
   end
 end
