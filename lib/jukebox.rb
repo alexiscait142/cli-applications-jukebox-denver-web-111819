@@ -47,8 +47,10 @@ def run(songs)
   while input != "exit"
       if input == "list"
         list(songs)
+        break
       elsif input == "play"
         play(songs)
+        break
       elsif input == "help"
         help 
         break
