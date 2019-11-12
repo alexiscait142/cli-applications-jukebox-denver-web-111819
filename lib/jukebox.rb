@@ -50,11 +50,13 @@ def exit_jukebox
 end
 
 def run(songs)
-  help
   prompt = "Please enter a command:"
   puts prompt
   input = gets.strip
-    while input != "exit"
+  if input == "exit"
+    exit_jukebox
+  end
+  while input != "exit"
     #   if input == "list"
     #     list(songs)
     #     puts prompt
